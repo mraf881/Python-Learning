@@ -15,7 +15,9 @@ df.total_rooms[0] #display the value for assigned position in [] according defin
 
 df.iloc[0,0] #select value using index based selection
 
-df.loc[0:5,["total_rooms","total_bedrooms"]] #selectiing the six row of defined column df.loc[<initial num row>:<final num row>,["column_name1", "column_name2"]]
+df.iloc[0,"column3"] #select value with number and string
+
+df.loc[0:5,["total_rooms","total_bedrooms"]] 
 
 #please note the return value of row of iloc and loc is not the same
 
