@@ -10,9 +10,9 @@ df.drop(["column1","column2"], axis=1, inplace=True) #drop multiple column
 
 #Duplicate
 
-df.duplicate().sum() #to show the duplicate.
+df.duplicated().sum() #to show the duplicate.
 
-df.drop_duplicate(inplac=True) #To remove the duplicate
+df.drop_duplicated(inplac=True) #To remove the duplicate
 
 #To check and remove missing value.
 
