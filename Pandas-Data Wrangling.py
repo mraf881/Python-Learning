@@ -40,8 +40,30 @@ df.column1.dtype #To show data type for column1.
 
 df.column1.astype("object") #Change the data type to object.
 
+#Formating Text
 
+df.column1 = df.column1.str.capitalize() #capatilise the value in the selected column
 
+df.column1 = df.column1.str.upper() #uppercase the value in the selected column
 
+df.column1 = df.column1.str.lower() #lowercase the value in the selected column
+
+df.column1 = df.column1.str.strip() #remove whitespace in selected column
+
+df.column.str.lstrip("leftstripstr") #to remove character from left 
+
+df.column.str.rstrip("rightstripstr") #to remove character from right
+
+df["col1_and_col2"] = df.col1 + df.col2 #concatenate between two column.
+
+df["col1_and_col2"] = df.col1 + " " + df.col2 #to add whitespace between concatenated value.
+
+#let say the following situation below
+#the col1 have dtype as float64 and the value is 2022.0
+#and we want to make it 2022. So,
+
+df["col1"].str.astype(str) #to convert the float64 to str
+
+df.col1.str(:4) #to get result as intended (2022).
 
 
