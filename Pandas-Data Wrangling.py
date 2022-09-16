@@ -62,8 +62,18 @@ df["col1_and_col2"] = df.col1 + " " + df.col2 #to add whitespace between concate
 #the col1 have dtype as float64 and the value is 2022.0
 #and we want to make it 2022. So,
 
-df["col1"].str.astype(str) #to convert the float64 to str
+df["col1"]=df["col1"].astype(str) #to convert the float64 to str
 
-df.col1.str(:4) #to get result as intended (2022).
+df["col1"]=df.col1.str(:4) #to get result as intended (2022).
 
+#sorting
 
+df.sort_values(by="col1",ascending=True,inplace=True) #to sort the dataframe to ascending order
+
+df.sort_values(by=["col1","col2","col3"],ascending=True,inplace=True) #to sort the dataframe to ascending order
+
+df.sort_values(by=["col1","col2","col3"],ascending=False,inplace=True) #to display highest value first.
+
+####
+
+df["new_col1"] = df.col1 + df.col2
