@@ -9,3 +9,22 @@ df.drop(["column1","column2"], axis=1, inplace=True) #drop multiple column
 df.duplicate().sum() #to show the duplicate.
 
 df.drop_duplicate(inplac=True) #To remove the duplicate
+
+df.isna() #check missing value. True is the missing value.
+
+df.isna().sum() #to show missing value in column.
+
+df.isna().sum().sum() #to show overall missing value.
+
+(df.isna().sum()/df.shape[0])*100 #to show percentage of missing value.
+
+df.fillna(0) #fill the entire row with 0 for null value.
+
+df.column1.fillna(0) #fill the specifi row with 0 for null value.
+
+df.column1.fillna(0,inplace=True) #to show the changes in the next dataframe.
+
+df.["New_Column1"]=0 #Create new column with 0 value in it.
+
+df.["is missing"] = df.column1.isna() #create new column with name "is missing" and show the null value is present acording to column1 as value.
+
