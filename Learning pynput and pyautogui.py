@@ -57,7 +57,7 @@ dropdown_x = last_click_coordinates[0]
 dropdown_y = last_click_coordinates[1]
 
 #Iterate through list of drop down answer
-dropdown_answer_list = ["Blasting Works","Complex Lifting","Confined Space","Demolition","Diving Operation","EIA Condition of Approval","Electrical & Temporary Electrical Supply Installation","Excavation","Falsework Dismantle","Falsework Installation","Hand Dug Caisson","Hand Tools/Power Tools","Hot Work","Load of Falsework","Movement of Plant and Machinery","Other activity (please state)","Reclamation Works","Scaffold Dismantling","Scaffold Installation","Simple/Intermediate Lifting","Traffic Management","Work Above Water","Working at Height","Sand Filling","Silt Curtain Installation","Silt Curtain Fabrication","Sand Mattress Installation","Sand Pipe Installation","Sand Levelling","Buoy Maintenance"]
+dropdown_answer_list = ["Answer1","Answer2", "Answer3"]
 
 
 #To count how many answer
